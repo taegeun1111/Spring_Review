@@ -1,0 +1,100 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    width: 50%;
+    margin: 100px auto;
+    background: black;
+    height: 750px;
+    font-family: 'Montserrat';
+}
+
+/* 상단 박스 */
+.main-title-wrapper {
+    text-align-last: left;
+    background: #7f5cd9;
+    height: 50%;
+    position: relative;
+    padding: 30px;
+}
+
+.main-title-wrapper h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.main-title-wrapper .iconSection {
+    height: 30px;
+    /* background: #684b78; */
+}
+
+
+/* 하단 박스 */
+.card-container {
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.wrap h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #b5b5b5;
+}
+
+.card-title-wrapper {
+    width: 150px;
+    line-height: 15px;
+}
+
+.card-wrapper {
+    background: #b5b5b5;
+    width: 23%;
+    height: 120px;
+    padding: 13px;
+    border-radius: 0.7rem;
+}
+
+.card-title-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.time-view-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 0.75em;
+    font-weight: 300;
+}
+
+.card-content {
+    padding-top: 5px;
+    font-weight: 400;
+}
+
+/* 삭제버튼 */
+.card-container .card-btn-group .del-btn {
+    outline: none;
+    background: none;
+    border: none;
+    /* font-size: 20px; */
+    font-weight: 100;
+    cursor: pointer;
+    padding: 3px;
+}
