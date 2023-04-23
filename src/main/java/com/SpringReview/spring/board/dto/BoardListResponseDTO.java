@@ -11,16 +11,16 @@ import java.time.format.DateTimeFormatter;
 @ToString
 public class BoardListResponseDTO {
     private final int boardNo;
-    private final String title;
-    private final String content;
+    private final String shortTitle;
+    private final String shortContent;
     private final int viewCount;
-    private final String regDateTime;
+    private final String date;
 
     public BoardListResponseDTO(Board board) {
         this.boardNo = board.getBoardNo();
-        this.title = makeShortTitle(board.getTitle());
-        this.content = makeShortContent(board.getContent());
-        this.regDateTime = makePrettierDateString(board.getRegDateTime());
+        this.shortTitle = makeShortTitle(board.getTitle());
+        this.shortContent = makeShortContent(board.getContent());
+        this.date = makePrettierDateString(board.getRegDateTime());
         this.viewCount = board.getViewCount();
     }
 
@@ -30,11 +30,11 @@ public class BoardListResponseDTO {
     }
 
     private String makeShortContent(String content) {
-
-        return null;
+        return (content.length() > 30) ? content.substring(0, 30) : content;
     }
 
     private String makeShortTitle(String title) {
+        return (title.length() > 10) ? title.substring(0, 10) : title;
     }
 
 
