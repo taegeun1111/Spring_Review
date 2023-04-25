@@ -32,13 +32,15 @@
             <h1>Your Note</h1>
         </div>
         <!-- 하단 박스 -->
-        <h3 class="sub-title">Sales Overview</h3>
         <div class="main-content-wrapper">
+            <div class="sub-title-wrapper">
+                <h3 class="sub-title">Sales Overview</h3>
+            </div>
             <c:forEach var="b" items="${blist}">
                 <div class="card-container">
                     <section class="card-wrapper">
                         <div class="card-title-wrapper">
-                            
+
                             <div class="card-btn-group">
                                 <h2 class="card-title">${b.shortTitle}</h2>
                                 <button class="del-btn">

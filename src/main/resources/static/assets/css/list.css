@@ -1,21 +1,23 @@
 .wrap {
     display: flex;
     flex-direction: column;
-    border-radius: 0.8rem;
+    border-radius: 15px;
     width: 50%;
     margin: 100px auto;
-    background: black;
+    /* background: black; */
     height: 750px;
     font-family: 'Montserrat';
+    background: black;
 }
 
 /* 상단 박스 */
 .main-title-wrapper {
     text-align-last: left;
     background: #7f5cd9;
-    height: 50%;
+    height: 40%;
     position: relative;
     padding: 30px;
+    border-radius: 15px;
 }
 
 .main-title-wrapper h1 {
@@ -33,36 +35,80 @@
 
 
 /* 하단 박스 공통 영역 */
-.main-content-wrapper{
-    margin: 0;
+.main-content-wrapper {
+    background: black;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.content-wrapper {
     display: flex;
-    height: 50%;
-    padding: 0 30px 30px 30px;
+    padding: 0px 10px 10px 10px;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: #b5b5b5;
 }
-
+.content-wrapper {
+    
+}
+/* 추가하기 버튼 */
 .add-btn {
-    width: 29.5%;
+    width: 21.9%;
     height: 80px;
     padding: 13px;
     border-radius: 0.7rem;
-    background: #b5b5b5;
+    background: #232323;
     display: flex;
-    color: white;
-}
-.main-content-wrapper .add-btn h4{
-    color: white;
+    position: relative;
+    cursor: pointer;
+ 
 }
 
+.main-content-wrapper .add-btn h4 {
+    color: white;
+    font-size: 3rem;
+    font-weight: 200;
+    position: absolute;
+    bottom: 10px;
+}
+.add-btn button{
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 2rem;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+      font-size: 11px;
+}
+.add-btn:hover{
+    background-color: #859193;
+}
+
+.add-btn .del-btn:hover{
+    background-color: rgb(223, 223, 223);
+    color: #859193;
+}
+/* 콘텐츠 박스 영역 */
 .card-container {
-    width: 29.5%;
-    background: #b5b5b5;
+    width: 21.9%;
+    background: #a5aaab;
     height: 80px;
     padding: 13px;
     border-radius: 0.7rem;
+    margin-bottom: 8px;
 }
+
+.card-container:nth-child(3n-2):hover{
+    background: white;
+}
+.card-container:nth-child(3n-1):hover{
+    background: papayawhip;
+}
+.card-container:nth-child(3n):hover{
+    background: rgb(236, 177, 187);
+}
+
+
 
 .card-title-wrapper {
     display: flex;
@@ -73,10 +119,13 @@
 }
 
 /* 소주제 */
-.sub-title {
+.sub-title-wrapper {
     font-size: 1.3rem;
+    font-weight: 200;
     color: #b5b5b5;
-    padding: 20px 0px 10px 30px;
+    width: 100%;
+    padding: 20px 20px 10px;
+    height: fit-content;
 }
 
 /* 타이틀 영역 */
@@ -84,6 +133,7 @@
     display: flex;
 }
 
+/* 삭제 버튼 영역 */
 .card-container .card-btn-group .del-btn {
     outline: none;
     background: none;
@@ -92,6 +142,7 @@
     cursor: pointer;
     padding: 3px;
     margin-left: auto;
+  
 }
 
 .card-title {
