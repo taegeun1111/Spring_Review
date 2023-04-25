@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 
     <link rel="stylesheet" href="/assets/css/list.css">
-    <!-- <link rel="stylesheet" href="/assets/css/list.css"> -->
 </head>
 
 <body>
@@ -66,6 +65,14 @@
                     </section>
                 </div>
             </c:forEach>
+
+            <div class="add-btn">
+                <h4>Add</h4>
+                <button class="del-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
         </div>
     </div>
 </body>

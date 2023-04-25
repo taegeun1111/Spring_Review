@@ -30,7 +30,7 @@ public class BoardListResponseDTO {
     }
 
     private String makeShortContent(String content) {
-        return (content.length() > 30) ? content.substring(0, 30) : content;
+        return (content.length() > 50) ? content.substring(0, 50) : content;
     }
 
     private String makeShortTitle(String title) {

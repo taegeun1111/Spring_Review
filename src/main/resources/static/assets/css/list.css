@@ -33,13 +33,27 @@
 
 
 /* 하단 박스 공통 영역 */
-.main-content-wrapper {
+.main-content-wrapper{
     margin: 0;
     display: flex;
     height: 50%;
     padding: 0 30px 30px 30px;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: #b5b5b5;
+}
+
+.add-btn {
+    width: 29.5%;
+    height: 80px;
+    padding: 13px;
+    border-radius: 0.7rem;
+    background: #b5b5b5;
+    display: flex;
+    color: white;
+}
+.main-content-wrapper .add-btn h4{
+    color: white;
 }
 
 .card-container {
@@ -59,11 +73,12 @@
 }
 
 /* 소주제 */
-.sub-title{
+.sub-title {
     font-size: 1.3rem;
     color: #b5b5b5;
     padding: 20px 0px 10px 30px;
 }
+
 /* 타이틀 영역 */
 .card-container .card-btn-group {
     display: flex;
@@ -92,7 +107,8 @@
     font-size: 0.75em;
     font-weight: 300;
 }
-.time-view-wrapper .time{
+
+.time-view-wrapper .time {
     margin-right: 5px;
 }
 
@@ -103,4 +119,3 @@
     font-size: 0.95rem;
     line-height: 19px;
 }
-
