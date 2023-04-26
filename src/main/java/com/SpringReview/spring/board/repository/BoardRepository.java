@@ -13,4 +13,6 @@ public interface BoardRepository {
     boolean save(Board board);
 
     boolean deleteByNo(int boardNo);
+
+    boolean modify(Board board);
 }

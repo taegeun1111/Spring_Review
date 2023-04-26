@@ -5,12 +5,13 @@ import com.SpringReview.spring.board.entity.Board;
 import com.SpringReview.spring.board.repository.BoardRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
-@Controller
+@Service
 public class BoardService {
     private final BoardRepository boardRepository;
 
@@ -21,6 +22,8 @@ public class BoardService {
                 .map(board1 -> new BoardListResponseDTO(board1))
                 .collect(Collectors.toList());
     }
+
+//    public void
 
 
 }
