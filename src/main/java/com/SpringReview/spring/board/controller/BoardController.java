@@ -16,10 +16,18 @@ public class BoardController {
     private final BoardService boardService;
 
     @RequestMapping("/list")
-    public String list(Model model){
+    public String list(Model model) {
         System.out.println("/board/list : GET");
         List<BoardListResponseDTO> blist = boardService.getList();
-        model.addAttribute("blist",blist);
+        model.addAttribute("blist", blist);
         return "list";
     }
+
+    @RequestMapping("/detail")
+    public String detail(Model model) {
+        System.out.println("/board/detail/ GET발생");
+        return "";
+    }
+
+
 }

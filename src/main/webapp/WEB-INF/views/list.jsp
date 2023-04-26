@@ -31,12 +31,13 @@
             <div class="iconSection">icon-section</div>
             <h1>Your Note</h1>
         </div>
-        <!-- 하단 박스 -->
         <div class="main-content-wrapper">
             <div class="sub-title-wrapper">
-                <h3 class="sub-title">Sales Overview</h3>
+                Sales Overview
             </div>
-            <c:forEach var="b" items="${blist}">
+            <!-- 하단 박스 -->
+            <div class="content-wrapper">
+                <c:forEach var="b" items="${blist}">
                 <div class="card-container">
                     <section class="card-wrapper">
                         <div class="card-title-wrapper">
@@ -67,16 +68,25 @@
                     </section>
                 </div>
             </c:forEach>
-
-            <div class="add-btn">
-                <h4>Add</h4>
-                <button class="del-btn">
-                    <i class="fas fa-times"></i>
-                </button>
+                <div class="add-btn">
+                    <h4>Add</h4>
+                    <button class="plus-btn">
+                        <i class="fas fa-plus"></i>
+                    </button>
+                </div>
             </div>
-
         </div>
+
     </div>
+
+    <script>
+        // int boardNo받기
+        const $cardContainer = document.querySelector('.card-container');
+        $cardContainer.onclick = e =>{
+            window.location.href = '/board/detail?boardNo=${b.boardNo}';
+        };
+
+    </script>
 </body>
 
 </html>

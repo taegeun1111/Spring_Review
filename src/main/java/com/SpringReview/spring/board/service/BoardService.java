@@ -21,4 +21,6 @@ public class BoardService {
                 .map(board1 -> new BoardListResponseDTO(board1))
                 .collect(Collectors.toList());
     }
+
+
 }

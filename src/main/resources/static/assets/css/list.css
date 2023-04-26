@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    width: 50%;
-    margin: 100px auto;
-    /* background: black; */
+    width: 60%;
     height: 750px;
     font-family: 'Montserrat';
     background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* 상단 박스 */
@@ -47,20 +49,67 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.content-wrapper {
-    
-}
-/* 추가하기 버튼 */
+
+.content-wrapper {}
+
+/* 콘텐츠 박스, ADD박스 공통 넓이  */
+.card-container,
 .add-btn {
-    width: 21.9%;
+    width: 21.6%;
     height: 80px;
     padding: 13px;
     border-radius: 0.7rem;
-    background: #232323;
+    margin-bottom: 8px;
+}
+
+/* 콘텐츠 박스 영역 */
+.card-container {
+    background: #a5aaab;
+}
+
+.card-container:nth-child(3n-2):hover {
+    background: rgb(230, 230, 230);
+}
+
+.card-container:nth-child(3n-1):hover {
+    background: papayawhip;
+}
+
+.card-container:nth-child(3n):hover {
+    background: rgb(236, 177, 187);
+}
+
+/* 삭제 버튼 영역 */
+.del-btn, .add-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: none;
+    border: none;
+    font-weight: 100;
+    cursor: pointer;
+    margin-left: auto;
+    width: 17px;
+    height: 17px;
+    background-color: white;
+    border-radius: 2rem;
+    font-size: 0.6rem;
+}
+
+/* 추가하기 버튼 */
+.add-btn {
+    background: #2d2d2d;
     display: flex;
     position: relative;
     cursor: pointer;
- 
+
+}
+
+.add-btn button {
+    font-size: 0.6rem;
+    position: absolute;
+    right: 13px;
 }
 
 .main-content-wrapper .add-btn h4 {
@@ -70,45 +119,15 @@
     position: absolute;
     bottom: 10px;
 }
-.add-btn button{
-    border: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 2rem;
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-      font-size: 11px;
-}
-.add-btn:hover{
+
+.add-btn:hover {
     background-color: #859193;
 }
 
-.add-btn .del-btn:hover{
+.add-btn .plus-btn:hover {
     background-color: rgb(223, 223, 223);
     color: #859193;
 }
-/* 콘텐츠 박스 영역 */
-.card-container {
-    width: 21.9%;
-    background: #a5aaab;
-    height: 80px;
-    padding: 13px;
-    border-radius: 0.7rem;
-    margin-bottom: 8px;
-}
-
-.card-container:nth-child(3n-2):hover{
-    background: white;
-}
-.card-container:nth-child(3n-1):hover{
-    background: papayawhip;
-}
-.card-container:nth-child(3n):hover{
-    background: rgb(236, 177, 187);
-}
-
-
 
 .card-title-wrapper {
     display: flex;
@@ -116,6 +135,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 5px;
+    position: relative;
 }
 
 /* 소주제 */
@@ -131,24 +151,14 @@
 /* 타이틀 영역 */
 .card-container .card-btn-group {
     display: flex;
-}
-
-/* 삭제 버튼 영역 */
-.card-container .card-btn-group .del-btn {
-    outline: none;
-    background: none;
-    border: none;
-    font-weight: 100;
-    cursor: pointer;
-    padding: 3px;
-    margin-left: auto;
-  
+    justify-content: space-between;
 }
 
 .card-title {
-    font-size: 1.15rem;
-    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: 400;
     margin-bottom: 6px;
+    color: rgb(255, 255, 255);
 }
 
 /* 조회수, 시간 영역 */
