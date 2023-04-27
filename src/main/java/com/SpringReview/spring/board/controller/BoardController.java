@@ -26,7 +26,8 @@ public class BoardController {
     @RequestMapping("/detail")
     public String detail(Model model) {
         System.out.println("/board/detail/ GET발생");
-        return "";
+
+        return "detail";
     }
 
 

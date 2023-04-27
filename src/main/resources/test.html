@@ -3,174 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
-
-    <title>Document</title>
-
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- reset -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-
-    <!-- fontawesome css: https://fontawesome.com -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-
-    <link rel="stylesheet" href="static/assets/css/list.css">
+    <title>Insert title here</title>
+    <link rel="stylesheet" href="static/assets/css/detail.css">
 </head>
 
 <body>
-    <div class="wrap">
-        <!-- 상단 박스 -->
-        <div class="main-title-wrapper">
-            <div class="iconSection">icon-section</div>
-            <h1>Your Note</h1>
+    <div class="detail-container">
+        <div class="detail-main-wrapper">
+            <section class="title-wrapper">
+                <div class="main-title">${b.title}</div>
+                <div class="main-content">${b.content}</div>
+            </section>
+            <section class="button-wrapper">
+                <div>Modify</div>
+                <div>Back</div>
+            </section>
+
         </div>
-        <div class="main-content-wrapper">
-            <div class="sub-title-wrapper">
-                Sales Overview
-            </div>
-            <!-- 하단 박스 -->
-            <div class="content-wrapper">
-
-                <div class="card-container">
-                    <section class="card-wrapper">
-                        <div class="card-title-wrapper">
-
-                            <div class="card-btn-group">
-                                <h2 class="card-title">${b.shortTitle}</h2>
-                                <button class="del-btn">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <div class="time-view-wrapper">
-                                <div class="time">
-                                    ${b.date}
-                                </div>
-                                <div class="view">
-                                    <i class="fas fa-eye"></i>
-                                    <span class="view-count">${b.viewCount}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-
-                            ${b.shortContent}
-
-                        </div>
-
-                    </section>
-                </div>
-                <div class="card-container">
-                    <section class="card-wrapper">
-                        <div class="card-title-wrapper">
-
-                            <div class="card-btn-group">
-                                <h2 class="card-title">${b.shortTitle}</h2>
-                                <button class="del-btn">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <div class="time-view-wrapper">
-                                <div class="time">
-                                    ${b.date}
-                                </div>
-                                <div class="view">
-                                    <i class="fas fa-eye"></i>
-                                    <span class="view-count">${b.viewCount}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-
-                            ${b.shortContent}
-
-                        </div>
-
-                    </section>
-                </div>
-                <div class="card-container">
-                    <section class="card-wrapper">
-                        <div class="card-title-wrapper">
-
-                            <div class="card-btn-group">
-                                <h2 class="card-title">${b.shortTitle}</h2>
-                                <button class="del-btn">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <div class="time-view-wrapper">
-                                <div class="time">
-                                    ${b.date}
-                                </div>
-                                <div class="view">
-                                    <i class="fas fa-eye"></i>
-                                    <span class="view-count">${b.viewCount}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-
-                            ${b.shortContent}
-
-                        </div>
-
-                    </section>
-                </div>
-                <div class="card-container">
-                    <section class="card-wrapper">
-                        <div class="card-title-wrapper">
-
-                            <div class="card-btn-group">
-                                <h2 class="card-title">${b.shortTitle}</h2>
-                                <button class="del-btn">
-                                    <i class="fas fa-times"></i>
-                                </button>
-                            </div>
-                            <div class="time-view-wrapper">
-                                <div class="time">
-                                    ${b.date}
-                                </div>
-                                <div class="view">
-                                    <i class="fas fa-eye"></i>
-                                    <span class="view-count">${b.viewCount}</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-
-                            ${b.shortContent}더ㅏ31도1ㅏ3ㅗ돋1ㅏㄷ31ㄹ디ㅓㄹㅈ디더리ㅏ저리
-                            ${b.shortContent}
-                            ${b.shortContent}
-                            ${b.shortContent}
-
-                            ${b.shortContent}
-                            ${b.shortContent}
-                            ${b.shortContent} ${b.shortContent}
-
-                        </div>
-
-                    </section>
-                </div>
-
-                <div class="add-btn">
-                    <h4>Add</h4>
-                    <button class="plus-btn">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
     </div>
-
 </body>
 
 </html>
