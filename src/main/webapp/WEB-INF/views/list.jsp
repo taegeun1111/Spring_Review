@@ -29,7 +29,7 @@
                 <!-- 상단 박스 -->
                 <div class="main-title-wrapper">
                     <div class="iconSection">icon-section</div>
-                    <h1>Your Note</h1>
+                    <h1>Board</h1>
                 </div>
                 <div class="main-content-wrapper">
                     <div class="sub-title-wrapper">

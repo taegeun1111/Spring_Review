@@ -18,9 +18,14 @@
 
 .title-wrapper{
     padding: 13px;
-    margin-top: 10px;
     font-size: 3rem;
-    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+/* input공통 영역 */
+.main-title, .main-content{
+    background: #a5a5a5;
 }
 .main-title{
     font-size: 2rem;

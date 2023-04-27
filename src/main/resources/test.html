@@ -4,21 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Insert title here</title>
-    <link rel="stylesheet" href="static/assets/css/detail.css">
+    <link rel="stylesheet" href="../../main/resources/static/assets/css/save.css">
 </head>
 
 <body>
-    <form action="/score/modify" method="post">
-        <div class="modify-container">
-            <div class="modify-main-wrapper">
+    <form action="/board/save" method="post">
+        <div class="save-container">
+            <div class="save-main-wrapper">
                 <section class="title-wrapper">
-                    <input type="hidden" name="boardNo" value="${b.boardNo}">
-                    <input class="main-title" type="text" value="${b.title}" name="title">
-                    <input class="main-content" type="text" value="${b.content}" name="content">
+                    <input class="main-title" type="text" name="title" placeholder="title">
+                    <input class="main-content" type="text" name="content">
                 </section>
                 <section class="button-wrapper">
                     <button type="submit">Confirm</button>
-                    <a href="/board/detail">Back</a>
+                    <a href="/board/list">Back</a>
                 </section>
 
             </div>

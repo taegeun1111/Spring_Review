@@ -1,6 +1,7 @@
 package com.SpringReview.spring.board.entity;
 
 import com.SpringReview.spring.board.dto.BoardRequestDto;
+import com.SpringReview.spring.board.dto.BoardSaveRequestDto;
 import lombok.*;
 
 import java.sql.ResultSet;
@@ -27,9 +28,9 @@ public class Board {
     }
 
     //등록하기 위한 생성자
-    public Board(String title, String content) {
-        this.title = title;
-        this.content = content;
+    public Board (BoardSaveRequestDto dto){
+        this.title = dto.getTitle();
+        this.content = dto.getContent();
         this.regDateTime = LocalDateTime.now();
     }
 

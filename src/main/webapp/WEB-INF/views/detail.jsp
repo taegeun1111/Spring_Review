@@ -18,7 +18,7 @@
             </section>
             <section class="button-wrapper">
                 <a href="/board/modify?boardNo=${b.boardNo}">Modify</a>
-                <a href="">Back</a>
+                <a href="/board/list">Back</a>
                 <a href=""></a>
             </section>
 

@@ -2,6 +2,7 @@ package com.SpringReview.spring.board.controller;
 
 import com.SpringReview.spring.board.dto.BoardListResponseDTO;
 import com.SpringReview.spring.board.dto.BoardRequestDto;
+import com.SpringReview.spring.board.dto.BoardSaveRequestDto;
 import com.SpringReview.spring.board.entity.Board;
 import com.SpringReview.spring.board.service.BoardService;
 import lombok.Getter;
@@ -60,10 +61,10 @@ public class BoardController {
         return "save";
     }
     @PostMapping("/save")
-    public String save(Board board){
+    public String save(BoardSaveRequestDto dto){
         System.out.println("post맵핑 발생");
-        System.out.println("board = " + board);
-        boardService.save(board);
+//        System.out.println("board = " + board);
+        boardService.save(new Board(dto));
         return "redirect:/board/list";
     }
 
