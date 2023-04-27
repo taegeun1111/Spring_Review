@@ -91,6 +91,15 @@
                         window.location.href = bnoHref;
                     };
                 });
+
+                //삭제버튼에 태그
+                const $addBtn =  document.querySelector('.add-btn');
+                $addBtn.onclick = e =>{
+                    // if(!e.target.matches('.add-btn *')) return;
+                    window.location.href = '/board/save';
+                }
+
+
             </script>
         </body>
 

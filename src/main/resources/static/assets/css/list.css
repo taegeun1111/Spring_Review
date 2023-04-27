@@ -64,7 +64,7 @@
 
 /* 콘텐츠 박스 영역 */
 .card-container {
-    background: #a5aaab;
+    background: white;
 }
 
 .card-container:nth-child(3n-2):hover {

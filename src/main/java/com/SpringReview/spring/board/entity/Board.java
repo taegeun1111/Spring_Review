@@ -1,5 +1,6 @@
 package com.SpringReview.spring.board.entity;
 
+import com.SpringReview.spring.board.dto.BoardRequestDto;
 import lombok.*;
 
 import java.sql.ResultSet;
@@ -25,10 +26,19 @@ public class Board {
         this.regDateTime = LocalDateTime.now();
     }
 
+    //등록하기 위한 생성자
+    public Board(String title, String content) {
+        this.title = title;
+        this.content = content;
+        this.regDateTime = LocalDateTime.now();
+    }
+
+
     public Board(ResultSet rs) throws SQLException {
         this.boardNo = rs.getInt("board_no");
         this.title = rs.getString("title");
         this.content = rs.getString("content");
         this.regDateTime = rs.getTimestamp("reg_datetime").toLocalDateTime();
     }
+
 }
