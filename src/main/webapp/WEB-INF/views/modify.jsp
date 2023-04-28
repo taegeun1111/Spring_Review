@@ -6,7 +6,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Insert title here</title>
-    <link rel="stylesheet" href="/assets/css/detail.css">
+    <link rel="stylesheet" href="/assets/css/save.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    
 </head>
 
 <body>
@@ -16,7 +20,7 @@
                 <section class="title-wrapper">
                     <input type="hidden" name="boardNo" value="${b.boardNo}">
                     <input class="main-title" type="text" value="${b.title}" name="title">
-                    <input class="main-content" type="text" value="${b.content}" name="content">
+                    <textarea class="main-content" type="text" value="${b.content}" name="content"></textarea>
                 </section>
                 <section class="button-wrapper">
                     <button type="submit">Confirm</button>

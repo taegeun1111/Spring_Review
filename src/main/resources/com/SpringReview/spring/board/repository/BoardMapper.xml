@@ -29,4 +29,11 @@
         INSERT INTO board(title, content, view_count, reg_datetime)
         VALUES(#{title},#{content}, 0, #{regDateTime})
     </insert>
+
+    <update id="viewCount">
+        UPDATE board
+        SET view_count = view_count+1
+        WHERE board_No =#{boardNo}
+    </update>
+
 </mapper>

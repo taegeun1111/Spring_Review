@@ -33,6 +33,7 @@ public class BoardService {
     }
 
     public Board getOneList(int boardNo){
+        boardRepository.viewCount(boardNo);
         return boardRepository.findOne(boardNo);
     }
 

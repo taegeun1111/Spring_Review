@@ -15,4 +15,6 @@ public interface BoardMapper {
     boolean deleteByNo(int boardNo);
 
     boolean modify(Board board);
+
+    boolean viewCount(int boardNo);
 }
